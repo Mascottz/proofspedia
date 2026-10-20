@@ -18,6 +18,10 @@ Open `index.html` for the home page, `proofs.html` for the archive, and `proof.h
 npm test
 ```
 
+## Brand assets
+
+See `assets/README.md` for the palette and brand usage. The logo marks, horizontal wordmark, favicon, and device icons live in `assets/`. The 1200 by 630 social preview has an editable SVG source and is referenced by the Open Graph and Twitter metadata on every page.
+
 ## Add a folio
 
 Add an entry to `data.js` with a unique `id` and `no`, a field, theorem, statement, origin, proof lead, proof steps, intuition, reason for keeping it, variants, and exactly two worked examples. Run `npm test` before publishing.
