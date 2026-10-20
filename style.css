@@ -79,21 +79,10 @@ img, svg { display: block; max-width: 100%; }
   line-height: 1;
 }
 .wordmark-mark {
-  position: relative;
-  display: inline-grid;
-  width: 26px;
-  height: 26px;
-  place-items: center;
-  color: var(--oxide);
-  font-family: var(--serif);
-  font-size: 17px;
-}
-.wordmark-mark::before {
-  position: absolute;
-  inset: 5px;
-  border: 1px solid var(--oxide);
-  content: "";
-  transform: rotate(45deg);
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
+  object-fit: contain;
 }
 .wordmark-note {
   margin-left: 5px;
@@ -385,7 +374,8 @@ h1 em, h2 em { color: var(--oxide); font-weight: 400; }
   transform: rotate(-45deg);
   transform-origin: top;
 }
-.edition-mark { color: #d5a477; font-family: var(--serif); font-size: 36px; text-align: center; }
+.edition-mark { display: grid; place-items: center; }
+.edition-mark img { width: 38px; height: 38px; object-fit: contain; }
 .edition-copy .eyebrow { color: rgba(255,253,247,.62); font-size: 8px; }
 .edition-copy h2 { margin: 12px 0 0; font-family: var(--serif); font-size: 36px; font-weight: 400; line-height: .97; }
 .edition-copy h2 em { color: #d9aa80; }
@@ -580,7 +570,8 @@ h1 em, h2 em { color: var(--oxide); font-weight: 400; }
 .criteria-list strong { color: var(--ink); font-family: var(--serif); font-size: 21px; font-weight: 400; line-height: 1.2; }
 .criteria-list p { margin: 2px 0 0; color: var(--muted); font-size: 11px; line-height: 1.6; }
 .contribute-section { position: relative; margin: 54px 0 0; padding: 28px 40px; display: grid; grid-template-columns: 55px 1fr; gap: 19px; background: var(--oxide-deep); color: var(--paper-light); clip-path: polygon(0 0, calc(100% - 22px) 0, 100% 22px, 100% 100%, 0 100%); }
-.contribute-mark { padding-top: 9px; color: #d9aa80; font-family: var(--serif); font-size: 32px; }
+.contribute-mark { padding-top: 9px; }
+.contribute-mark img { width: 34px; height: 34px; object-fit: contain; }
 .contribute-section .eyebrow { color: rgba(255,253,247,.65); }
 .contribute-section h2 { margin: 7px 0 7px; color: var(--paper-light); font-size: 35px; }
 .contribute-section h2 em { color: #d9aa80; }
@@ -633,8 +624,8 @@ h1 em, h2 em { color: var(--oxide); font-weight: 400; }
   border-top: 1px solid var(--line);
   color: var(--muted);
 }
-.footer-wordmark { color: var(--ink); font-family: var(--serif); font-size: 19px; line-height: 1; text-decoration: none; }
-.footer-wordmark span { color: var(--oxide); font-family: var(--sans); font-size: 13px; }
+.footer-wordmark { display: inline-flex; align-items: center; gap: 8px; color: var(--ink); font-family: var(--serif); font-size: 19px; line-height: 1; text-decoration: none; }
+.footer-mark { width: 24px; height: 24px; flex: 0 0 24px; object-fit: contain; }
 .site-footer p { margin: 0; font-family: var(--mono); font-size: 8px; letter-spacing: .04em; text-transform: uppercase; }
 .site-footer nav { display: flex; flex-wrap: wrap; justify-content: end; gap: 16px; }
 .site-footer nav a { color: var(--ink-soft); font-family: var(--mono); font-size: 8px; letter-spacing: .06em; text-decoration: none; text-transform: uppercase; }
@@ -674,6 +665,7 @@ h1 em, h2 em { color: var(--oxide); font-weight: 400; }
   .home-section { padding-inline: 6%; }
   #featuredGrid { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .edition-note { margin-inline: 6%; grid-template-columns: 32px 1fr; gap: 16px; padding: 24px; }
+  .edition-mark img { width: 30px; height: 30px; }
   .edition-description, .edition-link { grid-column: 2; }
   .archive-layout { grid-template-columns: 1fr; gap: 27px; padding-top: 37px; }
   .archive-rail { position: static; padding: 0 0 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 0 25px; border-right: 0; border-bottom: 1px solid var(--line); }
@@ -742,6 +734,7 @@ h1 em, h2 em { color: var(--oxide); font-weight: 400; }
   .criteria-list { grid-template-columns: 1fr; }
   .criteria-list li { min-height: 86px; grid-template-columns: 105px 1fr; }
   .contribute-section { margin-top: 34px; padding: 22px 19px; grid-template-columns: 32px 1fr; gap: 12px; }
+  .contribute-mark img { width: 32px; height: 32px; }
   .contribute-section h2 { font-size: 30px; }
   .colophon { grid-template-columns: 1fr; gap: 16px; }
   .ledger-page { padding: 42px 20px 55px; }

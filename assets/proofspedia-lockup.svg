@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" fill="none">
+  <g transform="translate(10 15)">
+    <path d="M15 68V12h22a17 17 0 0 1 0 34H15" stroke="#482d29" stroke-width="3.2" stroke-linecap="square" stroke-linejoin="miter"/>
+    <path d="M15 68h37" stroke="#ad8354" stroke-width="2.6" stroke-linecap="square"/>
+    <circle cx="59" cy="68" r="4" fill="#984a38"/>
+  </g>
+  <text x="91" y="61" fill="#282421" font-family="Georgia, 'Times New Roman', serif" font-size="42" letter-spacing="-1.2">Proofspedia</text>
+  <text x="94" y="86" fill="#736a60" font-family="'DejaVu Sans Mono', monospace" font-size="9" letter-spacing="2.1">A LIVING ARCHIVE OF ELEGANT MATHEMATICS</text>
+</svg>

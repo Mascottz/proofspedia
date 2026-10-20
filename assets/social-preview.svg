@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f8f4ec"/>
+  <path d="M38 38h1073l51 51v503H38z" fill="none" stroke="#d9d0c3" stroke-width="1.5"/>
+  <path d="M1111 38v51h51" fill="none" stroke="#ad8354" stroke-width="1.5"/>
+  <path d="M72 131h1056" stroke="#d9d0c3" stroke-width="1"/>
+
+  <g transform="translate(76 64) scale(.78)">
+    <path d="M15 50V12h18a11 11 0 0 1 0 22H15" fill="none" stroke="#482d29" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter"/>
+    <path d="M15 50h29" stroke="#ad8354" stroke-width="2.5" stroke-linecap="square"/>
+    <circle cx="50" cy="50" r="3.5" fill="#984a38"/>
+  </g>
+  <text x="132" y="105" fill="#282421" font-family="DejaVu Serif, Georgia, serif" font-size="31" letter-spacing="-1">Proofspedia</text>
+  <text x="399" y="101" fill="#736a60" font-family="DejaVu Sans Mono, monospace" font-size="10" letter-spacing="2.4">A LIVING ARCHIVE OF ELEGANT MATHEMATICS</text>
+  <text x="1082" y="104" fill="#984a38" font-family="DejaVu Serif, Georgia, serif" font-size="27">∴</text>
+
+  <text x="78" y="258" fill="#282421" font-family="DejaVu Serif, Georgia, serif" font-size="82" letter-spacing="-3">Proofs worth</text>
+  <text x="78" y="350" fill="#984a38" font-family="DejaVu Serif, Georgia, serif" font-size="96" font-style="italic" letter-spacing="-4">keeping.</text>
+  <path d="M80 388h50" stroke="#ad8354" stroke-width="2"/>
+  <text x="80" y="423" fill="#48413b" font-family="DejaVu Sans, sans-serif" font-size="19">A curated archive of elegant mathematics.</text>
+  <text x="80" y="453" fill="#48413b" font-family="DejaVu Sans, sans-serif" font-size="19">Proof, intuition, and examples on every folio.</text>
+
+  <path d="M80 504h452" stroke="#d9d0c3" stroke-width="1"/>
+  <text x="80" y="539" fill="#984a38" font-family="DejaVu Sans Mono, monospace" font-size="11" letter-spacing="2">40 FOLIOS</text>
+  <path d="M219 518v28" stroke="#b9aa97" stroke-width="1"/>
+  <text x="245" y="539" fill="#984a38" font-family="DejaVu Sans Mono, monospace" font-size="11" letter-spacing="2">09 FIELDS</text>
+  <text x="80" y="579" fill="#736a60" font-family="DejaVu Sans Mono, monospace" font-size="10" letter-spacing="1.1">PROOFSPEDIA.VERCEL.APP</text>
+
+  <circle cx="826" cy="347" r="174" fill="#fffdf7" fill-opacity=".38" stroke="#b9aa97" stroke-width="1.2"/>
+  <path d="M650 346h351M827 168v356" stroke="#b9aa97" stroke-width="1" stroke-dasharray="3 8"/>
+  <path d="m685 262 284 163M710 470l226-255" fill="none" stroke="#984a38" stroke-width="2"/>
+  <path d="M790 334a57 57 0 0 1 68-29" fill="none" stroke="#ad8354" stroke-width="3"/>
+  <circle cx="692" cy="266" r="5" fill="#fffdf7" stroke="#984a38" stroke-width="2"/>
+  <circle cx="964" cy="422" r="5" fill="#fffdf7" stroke="#984a38" stroke-width="2"/>
+  <circle cx="712" cy="468" r="5" fill="#fffdf7" stroke="#984a38" stroke-width="2"/>
+  <circle cx="935" cy="216" r="5" fill="#fffdf7" stroke="#984a38" stroke-width="2"/>
+  <circle cx="827" cy="346" r="5" fill="#984a38"/>
+  <text x="665" y="247" fill="#282421" font-family="DejaVu Serif, Georgia, serif" font-size="18" font-style="italic">A</text>
+  <text x="974" y="443" fill="#282421" font-family="DejaVu Serif, Georgia, serif" font-size="18" font-style="italic">B</text>
+  <text x="855" y="309" fill="#984a38" font-family="DejaVu Serif, Georgia, serif" font-size="23" font-style="italic">θ</text>
+  <text x="846" y="548" fill="#736a60" font-family="DejaVu Sans Mono, monospace" font-size="9" letter-spacing="1.5">ONE CLEAR TURN CAN REVEAL THE WHOLE PROOF</text>
+</svg>
