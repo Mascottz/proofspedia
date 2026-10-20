@@ -3,93 +3,95 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Archive ; Proofs from the Book</title>
-  <meta name="theme-color" content="#FDF8F0">
+  <meta name="theme-color" content="#f8f4ec">
+  <meta name="description" content="Browse the Proofspedia archive of memorable proofs across mathematical fields.">
+  <meta property="og:title" content="Archive | Proofspedia">
+  <meta property="og:description" content="Search and browse individual mathematical folios.">
+  <title>Archive | Proofspedia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-  <div class="page-wrap">
-    <header class="site-header" aria-label="Site header">
-      <div class="head-left"><a href="./index.html" style="text-decoration:none; color:inherit"><strong>Proofs from the Book</strong> <span class="mini-dot"></span> Archive</a></div>
-      <div class="head-center nav-links">
-        <a href="./proofs.html" style="color:var(--ox); border-bottom:1px solid var(--ox)">Archive →</a>
-        <a href="./about.html">About →</a>
-        <a href="./ledger.html">Ledger →</a>
-      </div>
-      <div class="head-right">
-        <a class="link-arrow" href="./index.html">Home →</a>
-        <a class="link-arrow" href="https://github.com/Mascottz/proofs" target="_blank" rel="noreferrer">Contribute →</a>
+<body data-page="archive">
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="./index.html" aria-label="Proofspedia home">
+          <span class="wordmark-mark" aria-hidden="true">∴</span>
+          <span>Proofspedia</span>
+          <span class="wordmark-note">Mathematical folios</span>
+        </a>
+        <nav class="primary-nav" aria-label="Main navigation">
+          <a href="./proofs.html" aria-current="page">Archive <span aria-hidden="true">→</span></a>
+          <a href="./about.html">About <span aria-hidden="true">→</span></a>
+          <a href="./ledger.html">Ledger <span aria-hidden="true">→</span></a>
+        </nav>
+        <a class="header-link" href="https://github.com/Mascottz/proofspedia" target="_blank" rel="noreferrer">Suggest a proof <span aria-hidden="true">↗</span></a>
       </div>
     </header>
 
-    <section class="shelf-wrap" id="shelf" aria-label="Archive shelf">
-      <nav class="rail" aria-label="Filters">
-        <div>
-          <div class="rail-label">Find a proof</div>
-          <label class="search-field" aria-label="Search proofs">
-            <input id="searchInput" type="search" placeholder="Search title, theorem, or idea…">
-          </label>
-          <p class="hint">Try ; primes, diagonal, Borsuk, Prufer, or pi</p>
+    <main class="archive-layout">
+      <aside class="archive-rail" aria-label="Archive controls">
+        <p class="eyebrow"><span class="eyebrow-line"></span>01 / The catalogue</p>
+        <h1>The archive</h1>
+        <p class="rail-intro">Find an argument by theorem, name, field, or idea.</p>
+
+        <div class="rail-group">
+          <label class="field-label" for="searchInput">Search folios</label>
+          <input id="searchInput" class="search-input" type="search" autocomplete="off" placeholder="Try primes or symmetry">
         </div>
-        <div>
-          <div class="rail-label">Filter by chapter</div>
-          <ul id="filterList">
-            <li><button data-filter="all" class="active">All proofs <i>32</i></button></li>
-            <li><button data-filter="number-theory">Number Theory <i>08</i></button></li>
-            <li><button data-filter="analysis">Analysis <i>04</i></button></li>
-            <li><button data-filter="geometry">Geometry <i>03</i></button></li>
-            <li><button data-filter="combinatorics">Combinatorics <i>04</i></button></li>
-            <li><button data-filter="graph-theory">Graph Theory <i>03</i></button></li>
-            <li><button data-filter="topology">Topology <i>01</i></button></li>
-            <li><button data-filter="set-theory">Set Theory <i>02</i></button></li>
-            <li><button data-filter="algebra">Algebra <i>01</i></button></li>
-            <li><button data-filter="probability">Probability <i>02</i></button></li>
-          </ul>
-          <div class="rail-label">Sort</div>
-          <ul>
-            <li><button data-sort="number" class="active">By number</button></li>
-            <li><button data-sort="glow">By glow</button></li>
-            <li><button data-sort="recent">By recent</button></li>
-          </ul>
-          <div class="actions">
-            <a class="mini-cta" href="#" id="randomBtn">Surprise me →</a>
-            <a class="mini-cta" href="https://github.com/Mascottz/proofs" target="_blank" rel="noreferrer">Propose a folio →</a>
+
+        <div class="rail-group">
+          <h2 class="field-label">Mathematical fields</h2>
+          <ul id="filterList" class="filter-list" aria-label="Filter by field"></ul>
+        </div>
+
+        <div class="rail-group">
+          <h2 class="field-label">Order</h2>
+          <div class="sort-list" role="group" aria-label="Sort folios">
+            <button type="button" data-sort="number" aria-pressed="true">Folio number</button>
+            <button type="button" data-sort="glow" aria-pressed="false">Editor's selection</button>
+            <button type="button" data-sort="recent" aria-pressed="false">Recently added</button>
           </div>
         </div>
-      </nav>
 
-      <div class="shelf-main">
-        <div class="shelf-head">
+        <div class="rail-tools">
+          <a class="text-link" href="#" id="randomBtn">Open a surprise <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="https://github.com/Mascottz/proofspedia" target="_blank" rel="noreferrer">Suggest a folio <span aria-hidden="true">↗</span></a>
+        </div>
+      </aside>
+
+      <section class="archive-results" aria-labelledby="archive-results-title">
+        <div class="archive-heading">
           <div>
-            <h2>The archive ; <i>all folios</i></h2>
-            <p id="shelfCount">32 proofs ; all chapters ; sorted by number</p>
+            <p class="eyebrow"><span class="eyebrow-line"></span>Proofs, kept on the page</p>
+            <h2 id="archive-results-title">All <em>folios</em></h2>
+            <p id="shelfCount" class="result-count" aria-live="polite">40 folios across 9 fields</p>
           </div>
-          <div class="view-toggles" role="group" aria-label="View toggles">
-            <button data-view="grid" class="active">Grid</button>
-            <button data-view="list">List</button>
+          <div class="view-switch" role="group" aria-label="Choose layout">
+            <button type="button" data-view="grid" aria-pressed="true">Grid</button>
+            <button type="button" data-view="list" aria-pressed="false">List</button>
           </div>
         </div>
-
-        <div id="folioGrid" class="folio-grid" aria-live="polite"></div>
-        <div id="emptyState" class="empty" style="display:none">No folios match that query ; try a broader search or clear filters.</div>
-        <div class="divider" style="margin:22px 0 0; padding:0"><i></i> <span></span> <small>Each folio keeps its originator on the page</small> <i></i></div>
-      </div>
-    </section>
+        <div id="folioGrid" class="folio-grid" aria-label="Proof folios"></div>
+        <p id="emptyState" class="empty-state" hidden>No folios match that search. Try another word or clear the field filter.</p>
+        <p class="archive-footnote">Each folio opens as its own page, with attribution and worked examples.</p>
+      </section>
+    </main>
 
     <footer class="site-footer">
-      <div>© 2026 ; Proofs from the Book ; living archive</div>
-      <div style="display:flex; gap:14px; flex-wrap:wrap">
-        <a href="./index.html">Home →</a>
-        <a href="./about.html">About →</a>
-        <a href="https://github.com/Mascottz/proofs" target="_blank" rel="noreferrer">GitHub →</a>
-      </div>
+      <a class="footer-wordmark" href="./index.html">Proofspedia <span>∴</span></a>
+      <p>A curated archive of elegant mathematics.</p>
+      <nav aria-label="Footer navigation">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./ledger.html">Ledger</a>
+        <a href="https://github.com/Mascottz/proofspedia" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </nav>
     </footer>
   </div>
-
   <script src="./data.js"></script>
   <script src="./app.js"></script>
-  <script>window.PAGE="archive";</script>
 </body>
 </html>

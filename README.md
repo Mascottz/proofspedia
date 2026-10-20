@@ -1,35 +1,23 @@
-# proofs
+# Proofspedia
 
-proofs from the book ; a living archive of elegant proofs
+A living, multi-page archive of elegant mathematical proofs.
 
-the most elegant proof for each theorem ; kept on the page with its originator, statement, steps and intuition ; continually updated
+The archive currently holds 40 folios across nine fields. Each folio has its own page with the theorem, a worked proof, intuition, variants, attribution, and two examples.
 
-32 proofs set across 9 chapters ; number theory, analysis, geometry, combinatorics, graph theory, topology, set theory, algebra, probability
+## Run locally
 
-multi page site ; home, archive, folio pages, about, ledger ; static, no framework ; deploys on vercel
-
-## run
-
-```
+```sh
 python3 -m http.server 8000
 ```
 
-open `index.html` ; archive at `proofs.html` ; each folio at `proof.html?id=...`
+Open `index.html` for the home page, `proofs.html` for the archive, and `proof.html?id=primes-infinite` for an individual folio.
 
-## add a proof
+## Check the collection
 
-edit `data.js` ; add entry to `PROOFS`
-
-```
-{
-  id: "slug",
-  no: "33",
-  domain: "Algebra",
-  title: "...",
-  theorem: "...",
-  origin: ["..."],
-  steps: ["..."]
-}
+```sh
+npm test
 ```
 
-proposals via discussions ; set in next edition with credit
+## Add a folio
+
+Add an entry to `data.js` with a unique `id` and `no`, a field, theorem, statement, origin, proof lead, proof steps, intuition, reason for keeping it, variants, and exactly two worked examples. Run `npm test` before publishing.
