@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Archive ; Proofs from the Book</title>
+  <meta name="theme-color" content="#FDF8F0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="site-header" aria-label="Site header">
+      <div class="head-left"><a href="./index.html" style="text-decoration:none; color:inherit"><strong>Proofs from the Book</strong> <span class="mini-dot"></span> Archive</a></div>
+      <div class="head-center nav-links">
+        <a href="./proofs.html" style="color:var(--ox); border-bottom:1px solid var(--ox)">Archive →</a>
+        <a href="./about.html">About →</a>
+        <a href="./ledger.html">Ledger →</a>
+      </div>
+      <div class="head-right">
+        <a class="link-arrow" href="./index.html">Home →</a>
+        <a class="link-arrow" href="https://github.com/Mascottz/proofs" target="_blank" rel="noreferrer">Contribute →</a>
+      </div>
+    </header>
+
+    <section class="shelf-wrap" id="shelf" aria-label="Archive shelf">
+      <nav class="rail" aria-label="Filters">
+        <div>
+          <div class="rail-label">Find a proof</div>
+          <label class="search-field" aria-label="Search proofs">
+            <input id="searchInput" type="search" placeholder="Search title, theorem, or idea…">
+          </label>
+          <p class="hint">Try ; primes, diagonal, Borsuk, Prufer, or pi</p>
+        </div>
+        <div>
+          <div class="rail-label">Filter by chapter</div>
+          <ul id="filterList">
+            <li><button data-filter="all" class="active">All proofs <i>32</i></button></li>
+            <li><button data-filter="number-theory">Number Theory <i>08</i></button></li>
+            <li><button data-filter="analysis">Analysis <i>04</i></button></li>
+            <li><button data-filter="geometry">Geometry <i>03</i></button></li>
+            <li><button data-filter="combinatorics">Combinatorics <i>04</i></button></li>
+            <li><button data-filter="graph-theory">Graph Theory <i>03</i></button></li>
+            <li><button data-filter="topology">Topology <i>01</i></button></li>
+            <li><button data-filter="set-theory">Set Theory <i>02</i></button></li>
+            <li><button data-filter="algebra">Algebra <i>01</i></button></li>
+            <li><button data-filter="probability">Probability <i>02</i></button></li>
+          </ul>
+          <div class="rail-label">Sort</div>
+          <ul>
+            <li><button data-sort="number" class="active">By number</button></li>
+            <li><button data-sort="glow">By glow</button></li>
+            <li><button data-sort="recent">By recent</button></li>
+          </ul>
+          <div class="actions">
+            <a class="mini-cta" href="#" id="randomBtn">Surprise me →</a>
+            <a class="mini-cta" href="https://github.com/Mascottz/proofs" target="_blank" rel="noreferrer">Propose a folio →</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="shelf-main">
+        <div class="shelf-head">
+          <div>
+            <h2>The archive ; <i>all folios</i></h2>
+            <p id="shelfCount">32 proofs ; all chapters ; sorted by number</p>
+          </div>
+          <div class="view-toggles" role="group" aria-label="View toggles">
+            <button data-view="grid" class="active">Grid</button>
+            <button data-view="list">List</button>
+          </div>
+        </div>
+
+        <div id="folioGrid" class="folio-grid" aria-live="polite"></div>
+        <div id="emptyState" class="empty" style="display:none">No folios match that query ; try a broader search or clear filters.</div>
+        <div class="divider" style="margin:22px 0 0; padding:0"><i></i> <span></span> <small>Each folio keeps its originator on the page</small> <i></i></div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div>© 2026 ; Proofs from the Book ; living archive</div>
+      <div style="display:flex; gap:14px; flex-wrap:wrap">
+        <a href="./index.html">Home →</a>
+        <a href="./about.html">About →</a>
+        <a href="https://github.com/Mascottz/proofs" target="_blank" rel="noreferrer">GitHub →</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./data.js"></script>
+  <script src="./app.js"></script>
+  <script>window.PAGE="archive";</script>
+</body>
+</html>

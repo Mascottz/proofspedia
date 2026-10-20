@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Folio ; Proofs from the Book</title>
+  <meta name="theme-color" content="#FDF8F0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="site-header" aria-label="Site header">
+      <div class="head-left"><a href="./index.html" style="text-decoration:none; color:inherit"><strong>Proofs from the Book</strong> <span class="mini-dot"></span> Folio</a></div>
+      <div class="head-center nav-links">
+        <a href="./proofs.html">Archive →</a>
+        <a href="./about.html">About →</a>
+        <a href="./ledger.html">Ledger →</a>
+      </div>
+      <div class="head-right">
+        <a class="link-arrow" href="./proofs.html">Back to archive →</a>
+        <a class="link-arrow" href="https://github.com/Mascottz/proofs" target="_blank" rel="noreferrer">Contribute →</a>
+      </div>
+    </header>
+
+    <main id="proofMain" style="max-width:1180px; margin:0 auto; padding:22px 28px 40px">
+      <div id="proofCrumb" style="font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:var(--muted); margin-bottom:14px"></div>
+      <article id="proofArticle"></article>
+      <div class="divider" style="padding:0; margin:20px 0"><i></i><span></span><small>More folios</small><i></i></div>
+      <div id="moreGrid" class="folio-grid" style="grid-template-columns:repeat(3,minmax(0,1fr))"></div>
+    </main>
+
+    <footer class="site-footer">
+      <div>© 2026 ; Proofs from the Book</div>
+      <div style="display:flex; gap:14px"><a href="./proofs.html">Archive →</a><a href="./index.html">Home →</a></div>
+    </footer>
+  </div>
+
+  <script src="./data.js"></script>
+  <script src="./app.js"></script>
+  <script>window.PAGE="proof";</script>
+</body>
+</html>
