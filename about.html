@@ -3,67 +3,91 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About ; Proofs from the Book</title>
-  <meta name="theme-color" content="#FDF8F0">
+  <meta name="theme-color" content="#f8f4ec">
+  <meta name="description" content="Learn how Proofspedia selects, edits, and attributes its mathematical proof folios.">
+  <meta property="og:title" content="About | Proofspedia">
+  <meta property="og:description" content="The editorial principles behind the archive.">
+  <title>About | Proofspedia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-  <div class="page-wrap">
-    <header class="site-header" aria-label="Site header">
-      <div class="head-left"><a href="./index.html" style="text-decoration:none; color:inherit"><strong>Proofs from the Book</strong> <span class="mini-dot"></span> About</a></div>
-      <div class="head-center nav-links">
-        <a href="./proofs.html">Archive →</a>
-        <a href="./about.html" style="color:var(--ox); border-bottom:1px solid var(--ox)">About →</a>
-        <a href="./ledger.html">Ledger →</a>
+<body data-page="about">
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="./index.html" aria-label="Proofspedia home">
+          <span class="wordmark-mark" aria-hidden="true">∴</span>
+          <span>Proofspedia</span>
+          <span class="wordmark-note">Mathematical folios</span>
+        </a>
+        <nav class="primary-nav" aria-label="Main navigation">
+          <a href="./proofs.html">Archive <span aria-hidden="true">→</span></a>
+          <a href="./about.html" aria-current="page">About <span aria-hidden="true">→</span></a>
+          <a href="./ledger.html">Ledger <span aria-hidden="true">→</span></a>
+        </nav>
+        <a class="header-link" href="https://github.com/Mascottz/proofspedia" target="_blank" rel="noreferrer">Suggest a proof <span aria-hidden="true">↗</span></a>
       </div>
-      <div class="head-right"><a class="link-arrow" href="https://github.com/Mascottz/proofs" target="_blank" rel="noreferrer">Contribute →</a></div>
     </header>
 
-    <section class="about-wrap" style="margin-top:22px" aria-label="About">
-      <div>
-        <h2>What makes a proof <i>belong here</i></h2>
-        <div class="about-text">
-          <p><strong>Elegance is not prettiness alone.</strong> It is inevitability ; the argument that leaves no alternative, that uses exactly what is needed and no more, that could be explained to a thoughtful peer in minutes and remembered for years.</p>
-          <p>This archive collects the most luminous proof for each theorem we cover. Every folio keeps its originator, its statement, its proof in steps, its intuition, and why it stays. All proofs read on the page ; no external link is the source.</p>
-          <p>It is continually updated ; new folios are set, existing ones can be refined, and all changes are recorded in the ledger with credit.</p>
-          <p style="font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:var(--muted)">No en dash or em dash ; only ; , → and hyphenated words</p>
+    <main class="about-page">
+      <section class="about-intro" aria-labelledby="about-title">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span>Notes on the archive</p>
+          <h1 id="about-title">What makes a proof<br><em>belong here?</em></h1>
         </div>
-      </div>
-      <div class="about-card">
-        <h3>How a folio is chosen</h3>
-        <ul>
-          <li><strong>Brevity ; the shorter road is preferred when it loses nothing</strong> <span>01</span></li>
-          <li><strong>Surprise ; the method could not be guessed from the statement</strong> <span>02</span></li>
-          <li><strong>Generality ; the idea illuminates beyond one theorem</strong> <span>03</span></li>
-          <li><strong>Clarity ; a second-year student can follow, a researcher can admire</strong> <span>04</span></li>
-        </ul>
-        <div class="about-text" style="margin-top:12px; font-size:14px">
-          <p>To propose ; open a discussion with statement, source, and a 5-line sketch of why it is elegant. Submissions are rendered as folios before review, with proposer credited as contributor.</p>
-          <p><a href="https://github.com/Mascottz/proofs/discussions" target="_blank" rel="noreferrer" style="border-bottom:1px solid var(--line-strong); text-decoration:none">Open proposal on GitHub →</a></p>
-          <p><a href="./ledger.html" style="border-bottom:1px solid var(--line-strong); text-decoration:none">See ledger →</a> <a href="./proofs.html" style="border-bottom:1px solid var(--line-strong); text-decoration:none; margin-left:12px">Browse archive →</a></p>
+        <div class="about-copy">
+          <p><strong>Elegance is not prettiness alone.</strong> It is the moment an argument becomes inevitable: one useful idea, clearly placed, doing exactly enough.</p>
+          <p>Proofspedia collects memorable arguments across mathematics. Each folio has a theorem, a complete proof in steps, intuition, variants, and two worked examples. The detail pages stand on their own, with individual attribution where it is known.</p>
+          <p>The archive is edited as a living collection. New folios are added with care; existing proofs can be clarified as they are reviewed.</p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="about-wrap" style="padding-top:0" aria-label="Colophon">
-      <div style="grid-column:1 / -1; border-top:1px solid var(--line); padding-top:18px; display:grid; grid-template-columns:1fr 1fr; gap:28px">
-        <div class="about-text">
-          <h3 style="font-family:'Instrument Serif', serif; font-weight:400; font-size:22px; margin:0 0 8px">Colophon</h3>
-          <p>Set in Instrument Serif and Cormorant Garamond ; mono in JetBrains Mono. Paper palette inspired by the original cover's warm glow. Every folio shape is a custom SVG wave ; no generic rectangles, no pills.</p>
-          <p>The site is static ; no framework ; deploy anywhere. Source lives at Mascottz/proofs ; built like naturaliis.</p>
+      <section class="selection-section" aria-labelledby="selection-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span>01 / Editorial measure</p>
+            <h2 id="selection-title">How a folio is <em>chosen</em></h2>
+          </div>
+          <p class="section-note">A good proof earns its space.</p>
         </div>
-        <div class="about-text">
-          <h3 style="font-family:'Instrument Serif', serif; font-weight:400; font-size:22px; margin:0 0 8px">Citation</h3>
-          <p style="font-family:'JetBrains Mono', monospace; font-size:12px; line-height:1.5; color:var(--muted)">Proofs from the Book ; living archive ; folio [number] ; retrieved from this site ; include theorem, originator and original source when reusing. Each proof keeps its references on its page.</p>
+        <ol class="criteria-list">
+          <li><span class="criteria-number">01</span><strong>Clarity</strong><p>The argument can be followed without hiding a key step.</p></li>
+          <li><span class="criteria-number">02</span><strong>Economy</strong><p>Every line advances the idea; nothing essential is skipped.</p></li>
+          <li><span class="criteria-number">03</span><strong>Surprise</strong><p>A simple turn reveals something the statement did not give away.</p></li>
+          <li><span class="criteria-number">04</span><strong>Afterlife</strong><p>The method offers a way to think beyond one theorem.</p></li>
+        </ol>
+      </section>
+
+      <section class="contribute-section" aria-labelledby="contribute-title">
+        <div class="contribute-mark" aria-hidden="true">∴</div>
+        <div>
+          <p class="eyebrow">A note from the editor</p>
+          <h2 id="contribute-title">A proof to <em>propose?</em></h2>
+          <p>Share the theorem, its mathematical origin, a short proof outline, and the reason the argument stays with you.</p>
+          <a class="text-link" href="https://github.com/Mascottz/proofspedia" target="_blank" rel="noreferrer">Open the repository <span aria-hidden="true">↗</span></a>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section class="colophon" aria-labelledby="colophon-title">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span>02 / Colophon</p>
+          <h2 id="colophon-title">Quiet by design.</h2>
+        </div>
+        <p>Set in Instrument Serif, DM Sans, and DM Mono. The pages use warm paper, dark ink, and a restrained oxide accent. Proofspedia is a static multi-page site built with HTML, CSS, and plain JavaScript.</p>
+      </section>
+    </main>
 
     <footer class="site-footer">
-      <div>© 2026 ; Proofs from the Book</div>
-      <div style="display:flex; gap:14px"><a href="./proofs.html">Archive →</a><a href="./index.html">Home →</a></div>
+      <a class="footer-wordmark" href="./index.html">Proofspedia <span>∴</span></a>
+      <p>A curated archive of elegant mathematics.</p>
+      <nav aria-label="Footer navigation">
+        <a href="./index.html">Home</a>
+        <a href="./proofs.html">Archive</a>
+        <a href="./ledger.html">Ledger</a>
+        <a href="https://github.com/Mascottz/proofspedia" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </nav>
     </footer>
   </div>
 </body>

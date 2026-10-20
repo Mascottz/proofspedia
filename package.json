@@ -1,0 +1,8 @@
+{
+  "name": "proofspedia",
+  "private": true,
+  "scripts": {
+    "test": "node scripts/check-content.js",
+    "serve": "python3 -m http.server 8000 --bind 0.0.0.0"
+  }
+}
